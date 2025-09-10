@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="student_style.css">
+</head>
+<body>
+    <section class="form-box">
+        <h1>Student Registration</h1>
+        <form>
+            <div class="field">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="in Capitals" required autofocus>
+            </div>
+
+            <div class="field">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter valid mail" required>
+            </div>
+
+            <div class="field">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="xxxxxxxxxx" pattern="[0-9]{10}" required>
+            </div>
+
+            <div class="field">
+                <label for="dept">Department</label>
+                <select id="dept" name="dept" required>
+                    <option value="">-- Choose Department --</option>
+                    <option value="cse">Computer Science</option>
+                    <option value="ece">Electronics</option>
+                    <option value="me">Mechanical</option>
+                    <option value="ce">Civil</option>
+                    <option value="it">Information Technology</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
